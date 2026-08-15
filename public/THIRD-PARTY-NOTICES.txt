@@ -1,0 +1,47 @@
+Third-Party Notices
+===================
+
+This wallpaper is built on the ba-memorial-lobby-wallpaper-runtime and
+ba-memorial-lobby-wallpaper-toolkit packages. The following third-party
+components are bundled in the offline distribution.
+
+1. Spine WebGL Runtime 3.8
+   - Project: EsotericSoftware/spine-runtimes (3.8 branch)
+   - License: Spine Runtimes License Agreement, see
+     vendor/SPINE-RUNTIMES-LICENSE.txt
+   - The runtime is pinned to the fixed commit
+     8b4844bd4b193ba9e54487ed397a777993cbad56; the bundled skeleton is
+     Spine 3.8.96 (compatible with the 3.8 runtime).
+
+2. Character model and textures (Azusa (Swimsuit) Memorial Lobby)
+   - Source: kiraio-moe/Schale-Archive, fixed commit
+     4172f080f7bef586ad5d4225891463caf44f91b9,
+     Spine_Lobbies/Spr/Azusa_swimsuit_home/
+   - Rightsholders: NEXON / NEXON Games Co., Ltd. Official game assets.
+     Mirrored by the community repository under its fair-use notice; no
+     redistribution license is granted by this project.
+
+3. Voice audio (Japanese Memorial Lobby lines)
+   - Source: Kivo Wiki static files
+     (https://static.kivo.wiki/voices/students/...), pinned via the
+     StuArchive student-228.json snapshot.
+   - Rightsholders: NEXON / NEXON Games Co., Ltd. Official game audio.
+
+4. BGM ("Luminous Memory", OST lossless FLAC)
+   - Source: Blue Archive Original Soundtrack Vol.1, track 2 (Mitsukiyo);
+     local lossless FLAC supplied by the project owner.
+   - Rightsholders: NEXON / NEXON Games Co., Ltd. Official game music.
+
+5. Dialogue subtitles (JP/CN/KR/TW/EN text)
+   - Sources: Kivo Wiki student-228.json and the pinned global-client
+     CharacterDialogExcel snapshot from arisu-archive/bluearchive-data.
+   - Official text remains owned by its rightsholders.
+
+6. Texture upscaling (Real-CUGAN, 4K/8K tiers)
+   - Tool: realcugan-ncnn-vulkan 20220728 (models-se set)
+   - License: see .cache/realcugan/tool/.../LICENSE and README.
+
+Blue Archive characters, names, art, audio, music, and related materials are
+owned by their official rightsholders (NEXON / NEXON Games, Yostar where
+applicable). This private offline build is for personal evaluation and is not
+authorized for public redistribution without explicit permission.

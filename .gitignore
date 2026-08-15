@@ -1,0 +1,28 @@
+# JavaScript / TypeScript
+node_modules/
+dist/
+release/
+.vite/
+coverage/
+*.log
+
+# Local tooling
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+
+# Downloaded and generated binary assets remain local build inputs and never enter Git.
+.cache/
+local-assets/
+generated-assets/
+public/assets/
+public/vendor/
+research/spine-inspection.json
+/log.txt
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
