@@ -3,7 +3,7 @@ Third-Party Notices
 
 This wallpaper is built on the ba-memorial-lobby-wallpaper-runtime and
 ba-memorial-lobby-wallpaper-toolkit packages. The following third-party
-components are bundled in the offline distribution.
+components are bundled in the distribution.
 
 1. Spine WebGL Runtime 3.8
    - Project: EsotericSoftware/spine-runtimes (3.8 branch)
@@ -17,9 +17,8 @@ components are bundled in the offline distribution.
    - Source: kiraio-moe/Schale-Archive, fixed commit
      4172f080f7bef586ad5d4225891463caf44f91b9,
      Spine_Lobbies/Spr/Azusa_swimsuit_home/
-   - Rightsholders: NEXON / NEXON Games Co., Ltd. Official game assets.
-     Mirrored by the community repository under its fair-use notice; no
-     redistribution license is granted by this project.
+   - Rightsholders: NEXON / NEXON Games Co., Ltd. Official game assets,
+     mirrored by the community repository.
 
 3. Voice audio (Japanese Memorial Lobby lines)
    - Source: Kivo Wiki static files
@@ -41,7 +40,12 @@ components are bundled in the offline distribution.
    - Tool: realcugan-ncnn-vulkan 20220728 (models-se set)
    - License: see .cache/realcugan/tool/.../LICENSE and README.
 
+Copyright Notice
+----------------
 Blue Archive characters, names, art, audio, music, and related materials are
 owned by their official rightsholders (NEXON / NEXON Games, Yostar where
-applicable). This private offline build is for personal evaluation and is not
-authorized for public redistribution without explicit permission.
+applicable). This unofficial fan project and its assets are provided for
+informational and educational purposes only, without any commercial intent.
+The project is not affiliated with, sponsored by, or endorsed by those
+companies. The affected assets will be removed upon request from the rights
+holders.

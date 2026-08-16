@@ -20,7 +20,7 @@
 ├── public/
 │   ├── project.json             # Wallpaper Engine 元数据与用户属性
 │   ├── preview.gif              # 256×256 动画预览（占位，需替换）
-│   ├── OFFLINE-README.txt       # 离线安装与完整性说明
+│   ├── OFFLINE-README.txt       # 安装、完整性与版权说明
 │   ├── THIRD-PARTY-NOTICES.txt  # 第三方资源与许可记录
 │   ├── assets/                  # 构建时由 prepare:assets 生成，不进 Git
 │   └── vendor/                  # 构建时生成的内置 Spine 运行时，不进 Git
@@ -33,7 +33,7 @@
 │   ├── lib/                     # 共享工具：媒体解析、资产布局、配置加载
 │   ├── prepare-assets.mjs       # 校验并拷贝资产到 public/，生成多档位
 │   ├── validate-structure.mjs   # 无资产结构校验（模板自身健康检查）
-│   ├── validate-dist.mjs        # 构建产物完整性与离线规则校验
+│   ├── validate-dist.mjs        # 构建产物完整性与分发规则校验
 │   ├── inspect-spine.mjs        # 导出 .skel 的动画/骨骼/事件报告
 │   ├── generate-model-textures.mjs  # Real-CUGAN 生成 4K/8K 纹理档位
 │   ├── generate-placeholder-preview.mjs  # 生成占位预览 GIF

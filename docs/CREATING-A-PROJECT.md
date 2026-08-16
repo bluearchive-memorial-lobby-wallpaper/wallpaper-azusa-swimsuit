@@ -15,7 +15,7 @@ toolkit 依赖。请按以下顺序完成替换。
 - `id`：稳定唯一标识，例如 `blue-archive-hare-camping`；发布后不要改名。
 - `slug`：资产目录名，例如 `hare-camping`。
 - `title`：壁纸显示名。
-- `editionLabel`：版本标识，例如 `OFFLINE EDITION · 1.0.0`。
+- `editionLabel`：版本标识，例如 `PUBLIC EDITION · 1.0.0`。
 
 同步更新：
 
@@ -52,10 +52,11 @@ npm run verify:checksums
 
 编辑 `public/project.json`：
 
-- `title`、`description`：壁纸展示文本（`validate:structure` 要求描述包含 "offline"）。
+- `title`、`description`：壁纸展示文本（`validate:structure` 要求描述包含 "educational"，
+  即版权声明中的教育用途说明）。
 - `preview`：替换 `public/preview.gif` 为真实 256×256 动画预览。
-- 分级、标签与可见性：按实际内容调整。
-- 不要添加 `workshopid` / `workshopurl`；本模板面向私人离线发布。
+- 分级、标签与可见性：按实际内容调整；正式发布时由 Wallpaper Engine 编辑器写入
+  `workshopid` 并设置创意工坊可见性。
 
 属性结构、默认值、条件与分组由 runtime 的设置契约决定，请保持与模板一致；回归测试
 `npm run test:settings` 会校验 `project.json` 默认值与 runtime 默认设置一致。
@@ -71,9 +72,17 @@ npm run package:offline
 ```
 
 确定性 ZIP 输出到 `release/`。打包前确认 `package:offline` 中的 `--timestamp` 为本次
-发布的实际时间。
+发布的实际时间。正式版本通过 Wallpaper Engine 编辑器发布至 Steam 创意工坊。
 
-## 7. 验证门禁
+## 7. 版权声明
+
+基于本模板创建的项目会打包《蔚蓝档案》游戏资产（角色、立绘、语音、音乐、字幕文本）。
+在 `public/project.json` 描述、`public/OFFLINE-README.txt`、`public/THIRD-PARTY-NOTICES.txt`
+和仓库 README 中保留版权声明：资产归其各自权利方（NEXON Games Co., Ltd.、Yostar 等
+《蔚蓝档案》相关权利方）所有，本项目及其资产仅用于信息与教育目的，不用于任何商业用途；
+粉丝项目与上述公司无隶属、赞助或背书关系；权利方要求时相关资产将被移除。
+
+## 8. 验证门禁
 
 部署前必须完成两项硬性验证，并把过程记录在项目文档中：
 

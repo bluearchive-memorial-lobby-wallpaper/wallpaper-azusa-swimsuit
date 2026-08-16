@@ -1,7 +1,7 @@
-# 资产准备与离线发布流程
+# 资产准备与发布流程
 
 所有二进制资源（模型、纹理、音频、BGM、Spine 运行时）都不进 Git。它们作为本地构建
-输入存在，离线 ZIP 由本机构建生成。
+输入存在，发行包由本机构建生成。
 
 ## 输入布局
 
@@ -22,7 +22,7 @@ generated-assets/
 
 ## 流程
 
-1. **获取与记录**：只使用权利方可验证的来源；把来源、提交号、SHA-256、许可状态写入
+1. **获取与记录**：只使用来源可验证的来源；把来源、提交号、SHA-256 与权利归属写入
    `research/PROVENANCE.md`。
 2. **校验清单**：`npm run generate:checksums` 生成 `research/checksums.sha256`；
    `npm run verify:checksums` 回验。
@@ -34,13 +34,15 @@ generated-assets/
    `public/assets/<slug>/`，生成缩放 atlas，并复制固定的 Spine 运行时与许可到
    `public/vendor/`。
 6. **构建与校验**：`npm run build` 运行 `vite build` 后由 `scripts/validate-dist.mjs`
-   校验文件清单、元数据、预览、档位尺寸、OGG/FLAC 头、离线规则与 CEF 兼容性。
+   校验文件清单、元数据、预览、档位尺寸、OGG/FLAC 头、分发规则与 CEF 兼容性。
 7. **打包**：`npm run package:offline` 用固定时间戳生成确定性 ZIP，包内含逐文件
    `MANIFEST.sha256`，并在 `release/` 生成整体校验和。
+8. **发布**：正式版本通过 Wallpaper Engine 编辑器发布至 Steam 创意工坊（编辑器写入
+   `workshopid` 并设置可见性）。
 
 ## 分发约束
 
 - `dist/` 不得包含远程 URL、source map、缓存文件、原始研究文件或密钥路径。
-- `project.json` 不预填 `workshopid` / `workshopurl`。
-- 离线 ZIP 不是源码或原始资产备份；源码、固定输入与输出记录分别保存。
+- 发行包不是源码或原始资产备份；源码、固定输入与输出记录分别保存。
 - Spine 运行时必须与 `.skel` 版本匹配（模板固定 3.8），并随包附许可文本。
+- 版权声明随包保留：资产归其各自权利方所有，本项目及其资产仅用于信息与教育目的。
