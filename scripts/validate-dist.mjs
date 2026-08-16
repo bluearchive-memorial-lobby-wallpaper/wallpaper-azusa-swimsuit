@@ -70,25 +70,22 @@ try {
   if (
     project.version !== 2 ||
     !project.title?.includes(PROJECT.title) ||
-    !project.description?.toLowerCase().includes("offline")
+    !project.description?.toLowerCase().includes("educational")
   ) {
-    throw new Error("project.json does not identify the offline edition");
+    throw new Error("project.json does not identify the edition");
   }
   if (project.preview !== "preview.gif") {
-    throw new Error("Offline edition preview metadata is missing");
+    throw new Error("Edition preview metadata is missing");
   }
   if (
     project.contentrating !== "Everyone" ||
     project.ratingsex !== "none" ||
     project.ratingviolence !== "none" ||
-    project.visibility !== "private" ||
+    project.visibility !== "public" ||
     !Array.isArray(project.tags) ||
     !project.tags.includes("Anime")
   ) {
-    throw new Error("Offline edition rating, visibility, or tags are incomplete");
-  }
-  if (Object.hasOwn(project, "workshopid") || Object.hasOwn(project, "workshopurl")) {
-    throw new Error("Local project.json must not contain Workshop identity fields");
+    throw new Error("Edition rating, visibility, or tags are incomplete");
   }
 
   const preview = await readFile(path.join(dist, "preview.gif"));
@@ -151,7 +148,7 @@ try {
       readFile(path.join(dist, "logging-bootstrap.js"), "utf8"),
     ]);
   if (!offlineReadme.includes("MANIFEST.sha256")) {
-    throw new Error("Offline installation and integrity instructions are incomplete");
+    throw new Error("Installation and integrity instructions are incomplete");
   }
   if (!thirdPartyNotices.includes("Spine 3.8")) {
     throw new Error("Third-party notices must identify the Spine runtime version");
@@ -197,8 +194,8 @@ try {
   }
 
   console.log(
-    `Validated offline dist: preview, metadata, notices, model tiers, ` +
-      `${layout.voice.length} voices, BGM, Spine runtime, and offline-only rules.`,
+    `Validated dist: preview, metadata, notices, model tiers, ` +
+      `${layout.voice.length} voices, BGM, Spine runtime, and distribution rules.`,
   );
 } finally {
   await close();

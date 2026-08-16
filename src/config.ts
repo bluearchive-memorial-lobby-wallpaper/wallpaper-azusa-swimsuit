@@ -14,7 +14,7 @@ export const PROJECT = {
   id: "blue-archive-azusa-swimsuit",
   slug: "azusa-swimsuit",
   title: "白洲梓（泳装）",
-  editionLabel: "OFFLINE EDITION · 0.1.0",
+  editionLabel: "PUBLIC EDITION · 0.1.0",
 } as const;
 
 export const VOICE_LOCALES: readonly VoiceLocale[] = ["ja", "zh-cn", "ko"];

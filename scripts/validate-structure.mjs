@@ -84,13 +84,11 @@ assert.equal(project.type, "web");
 assert.equal(project.file, "index.html");
 assert.equal(project.version, 2);
 assert.equal(project.preview, "preview.gif");
-assert.equal(project.visibility, "private");
+assert.equal(project.visibility, "public");
 assert.equal(project.contentrating, "Everyone");
 assert.equal(project.ratingsex, "none");
 assert.equal(project.ratingviolence, "none");
 assert.ok(Array.isArray(project.tags) && project.tags.includes("Anime"));
-assert.ok(!Object.hasOwn(project, "workshopid"), "project.json must not contain workshopid");
-assert.ok(!Object.hasOwn(project, "workshopurl"), "project.json must not contain workshopurl");
 
 const { config, close } = await loadWallpaperConfig(root);
 try {
@@ -158,7 +156,7 @@ const checksumsText = await readFile(
 parseChecksumManifest(checksumsText, "research/checksums.sha256");
 
 const readme = await readFile(path.join(root, "README.md"), "utf8");
-for (const marker of ["快速开始", "占位符", "验证"]) {
+for (const marker of ["Quick Start", "Placeholders", "Verification"]) {
   assert.ok(readme.includes(marker), `README.md must cover: ${marker}`);
 }
 

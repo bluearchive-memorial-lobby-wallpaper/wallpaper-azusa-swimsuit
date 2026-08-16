@@ -12,9 +12,7 @@ assert.equal(project.type, "web");
 assert.equal(project.file, "index.html");
 assert.equal(project.version, 2);
 assert.equal(project.preview, "preview.gif");
-assert.equal(project.visibility, "private");
-assert.ok(!Object.hasOwn(project, "workshopid"));
-assert.ok(!Object.hasOwn(project, "workshopurl"));
+assert.equal(project.visibility, "public");
 console.log(
   "Validated Wallpaper Engine project metadata and defaults against runtime defaults.",
 );

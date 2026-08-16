@@ -20,7 +20,7 @@ jobs:
       - run: npm run validate:structure
 
   build:
-    name: Offline build and package (requires assets)
+    name: Build and package (requires assets)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,7 +29,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - name: Build and package offline
+      - name: Build and package
         if: hashFiles('local-assets/original/**') != ''
         run: |
           npm run build

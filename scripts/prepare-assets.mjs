@@ -152,7 +152,7 @@ try {
   );
 
   console.log(
-    `Prepared verified offline assets for "${layout.slug}": model tiers, ` +
+    `Prepared verified assets for "${layout.slug}": model tiers, ` +
       `${layout.voice.length} voices, BGM, and the Spine 3.8 runtime.`,
   );
 } finally {
