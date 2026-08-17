@@ -11,7 +11,6 @@
     "verify:checksums": "memorial-lobby-toolkit checksums --input local-assets/original --output research/checksums.sha256 --base . --verify",
     "inspect:spine": "node scripts/inspect-spine.mjs",
     "generate:model-textures": "node scripts/generate-model-textures.mjs",
-    "generate:character-preview": "node scripts/generate-character-preview.mjs",
     "prepare:assets": "node scripts/prepare-assets.mjs",
     "dev": "npm run prepare:assets && vite --host 127.0.0.1",
     "test:display": "node scripts/test-display-layout.mjs",

@@ -118,9 +118,11 @@
 
 ## 预览图
 
-`public/preview.gif` 由 `scripts/generate-character-preview.mjs` 生成：以
-headless Chrome 加载应用、渲染 `Idle_01` 待机动画的 8 个采样帧，按角色几何
-包围盒裁剪并缩放为 256×256 动画 GIF（约 40KB），满足离线包校验约束。
+`public/preview.gif` 由 pipeline 的 `preview` target 生成（headless Chrome
+CDP 截取，规范见 `pipeline/docs/WORKSHOP-RELEASE-STANDARD.md`）：以
+headless Chrome 加载应用、在 idle 动画阶段采样 8 帧，按角色头部包围盒
+正方形裁剪（面部居中）并缩放为 256×256 动画 GIF（8 帧 × 20cs，约
+420KB），随 `dist/preview.gif` 镜像进发行包。
 
 ## 权利归属
 
