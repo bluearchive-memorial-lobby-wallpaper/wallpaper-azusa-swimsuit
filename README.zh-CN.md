@@ -58,8 +58,7 @@ npm run package:offline      # 生成确定性离线 ZIP
 
 ## 发行状态
 
-项目已准备通过 Wallpaper Engine 编辑器发布至 Steam 创意工坊（发布时编辑器会
-写入 `workshopid`）。`npm run package:offline` 仍可生成确定性的独立 ZIP。
+正式版 `1.0.0` 已通过 Wallpaper Engine 编辑器发布至 [Steam 创意工坊](https://steamcommunity.com/sharedfiles/filedetails/?id=3785087518)，对应 Workshop ID 为 `3785087518`。`npm run package:offline` 仍可生成确定性的独立 ZIP。
 
 ## 资产说明
 
@@ -87,3 +86,11 @@ npm run package:offline      # 生成确定性离线 ZIP
 
 浏览器侧的 `?debug=1`、`?testWeInterfaces` 只是预检，不能替代真实 WE 窗口
 测试。
+
+## 发布更新
+
+### v1.0.0（2026-08-17）
+
+- 首次发布白洲梓（泳装）记忆大厅壁纸至 Steam 创意工坊项目 `3785087518`。
+- 已发布的预览 GIF 会持续无限循环播放。
+- 默认主题色为从待机阶段代表截图采集的 `#8687af`。
