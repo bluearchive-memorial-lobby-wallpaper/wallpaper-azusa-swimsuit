@@ -1,6 +1,6 @@
 {
   "name": "azusa-swimsuit-wallpaper",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -23,7 +23,7 @@
     "validate:structure": "node scripts/validate-structure.mjs",
     "check": "npm run typecheck && npm run test && npm run validate:structure",
     "build": "npm run prepare:assets && npm run typecheck && vite build && node scripts/validate-dist.mjs",
-    "package:offline": "npm run build && memorial-lobby-toolkit package --input dist --output release/azusa-swimsuit-we-offline-v{version}.zip --package-json package.json --timestamp 2026-01-01T00:00:00.000Z",
+    "package:offline": "npm run build && node scripts/package-offline.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {

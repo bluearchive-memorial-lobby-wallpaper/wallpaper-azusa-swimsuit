@@ -13,8 +13,8 @@ export type SubtitleLocale = "zh-cn" | "ja" | "ko" | "en";
 export const PROJECT = {
   id: "blue-archive-azusa-swimsuit",
   slug: "azusa-swimsuit",
-  title: "白洲梓（泳装）",
-  editionLabel: "PUBLIC EDITION · 0.1.0",
+  title: "Azusa (Swimsuit)",
+  editionLabel: "PUBLIC EDITION · 1.0.0",
 } as const;
 
 export const VOICE_LOCALES: readonly VoiceLocale[] = ["ja", "zh-cn", "ko"];
