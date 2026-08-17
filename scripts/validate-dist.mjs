@@ -70,7 +70,8 @@ try {
   if (
     project.version !== 2 ||
     !project.title?.includes(PROJECT.title) ||
-    !project.description?.toLowerCase().includes("educational")
+    !project.description?.toLowerCase().includes("educational") ||
+    !project.description?.includes("Update Log")
   ) {
     throw new Error("project.json does not identify the edition");
   }
