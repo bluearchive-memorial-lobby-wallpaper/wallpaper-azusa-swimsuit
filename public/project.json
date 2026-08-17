@@ -23,7 +23,7 @@
         "order": 1,
         "text": "Theme Color",
         "type": "color",
-        "value": "0.054902 0.305882 0.674510"
+        "value": "0.525490 0.529412 0.686275"
       },
       "renderresolution": {
         "condition": "qualitypreset.value == 'custom'",
