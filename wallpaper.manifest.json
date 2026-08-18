@@ -1,0 +1,64 @@
+{
+    "schemaVersion":  1,
+    "project":  {
+                    "id":  "blue-archive-azusa-swimsuit",
+                    "entry":  "src/main.ts"
+                },
+    "runtime":  {
+                    "package":  "ba-memorial-lobby-wallpaper-runtime",
+                    "range":  "^0.1.0"
+                },
+    "content":  {
+                    "studentId":  "CH0170",
+                    "variantId":  "swimsuit"
+                },
+    "resources":  {
+                      "model":  {
+                                    "sourceTier":  "2k",
+                                    "outputTiers":  [
+                                                        "2k",
+                                                        "4k",
+                                                        "8k"
+                                                    ]
+                                },
+                      "voice":  {
+                                    "locales":  [
+                                                    "ja",
+                                                    "zh-cn",
+                                                    "ko"
+                                                ],
+                                    "expectedCount":  30
+                                },
+                      "preview":  true
+                  },
+    "structure":  {
+                      "requiredFiles":  [
+                                            "src/main.ts",
+                                            "src/config.ts",
+                                            "public/project.json",
+                                            "public/preview.gif",
+                                            "README.md",
+                                            ".gitignore"
+                                        ],
+                      "validateHtmlShell":  true,
+                      "validatePreview":  true,
+                      "validateChecksums":  true
+                  },
+    "build":  {
+                  "outputDirectory":  "dist",
+                  "logRoute":  "/__wallpaper-log",
+                  "target":  "chrome90"
+              },
+    "distribution":  {
+                         "requiredFiles":  [
+                                               "index.html",
+                                               "logging-bootstrap.js",
+                                               "preview.gif"
+                                           ],
+                         "previewPath":  "preview.gif",
+                         "validatePreview":  true
+                     },
+    "package":  {
+                    "archiveName":  "blue-archive-azusa-swimsuit.zip"
+                }
+}
