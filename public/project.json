@@ -1,17 +1,32 @@
 {
   "contentrating": "Everyone",
-  "description": "Voice: CN/JP/KR · Subtitles: CN/JP/KR/EN · Textures: 2K/4K/8K\n\nAzusa (Swimsuit) interactive wallpaper. Includes five memorial-lobby dialogue sequences, Chinese/Japanese/Korean voice tracks, Chinese/Japanese/Korean/English subtitles, head patting, mouse tracking, BGM, and selectable render/texture quality. This is a fan-made project for informational and educational purposes only; all Blue Archive assets belong to their respective rights holders.\n\n\u8bed\u97f3\uff1a\u4e2d/\u65e5/\u97e9 \u00b7 \u5b57\u5e55\uff1a\u4e2d/\u65e5/\u97e9/\u82f1 \u00b7 \u7eb9\u7406\uff1a2K/4K/8K\n\n\u767d\u6d32\u6893\uff08\u6cf3\u88c5\uff09\u4e92\u52a8\u58c1\u7eb8\uff1a\u5305\u542b\u4e94\u7ec4\u8bb0\u5fc6\u5927\u5385\u5bf9\u8bdd\u3001\u4e2d\u65e5\u97e9\u8bed\u97f3\u3001\u4e2d\u65e5\u97e9\u82f1\u5b57\u5e55\u3001\u6478\u5934\u3001\u89c6\u7ebf\u8ddf\u968f\u3001BGM\uff0c\u4ee5\u53ca\u53ef\u9009\u6e32\u67d3\u548c\u7eb9\u7406\u753b\u8d28\u3002\u672c\u9879\u76ee\u4e3a\u7c89\u4e1d\u81ea\u5236\uff0c\u4ec5\u7528\u4e8e\u4fe1\u606f\u4e0e\u6559\u80b2\u76ee\u7684\uff1b\u6240\u6709\u300a\u851a\u84dd\u6863\u6848\u300b\u8d44\u4ea7\u5f52\u5176\u5404\u81ea\u6743\u5229\u65b9\u6240\u6709\u3002\n\n## Update Log\n\n### v1.0.0 (2026-08-17)\n- Initial release: Azusa (Swimsuit) memorial lobby wallpaper with CN/JP/KR voices, CN/JP/KR/EN subtitles, head patting, mouse tracking, and 2K/4K/8K textures.\n- \u9996\u6b21\u53d1\u5e03\uff1a\u767d\u6d32\u6893\uff08\u6cf3\u88c5\uff09\u8bb0\u5fc6\u5927\u5385\u58c1\u7eb8\uff0c\u4e2d\u65e5\u97e9\u8bed\u97f3\u3001\u4e2d\u65e5\u97e9\u82f1\u5b57\u5e55\u3001\u6478\u5934\u3001\u89c6\u7ebf\u8ddf\u968f\u4e0e 2K/4K/8K \u7eb9\u7406\u3002",
+  "description": "Voice: CN/JP/KR · Subtitles: CN/JP/KR/EN · Textures: 2K/4K/8K\n\nAzusa (Swimsuit) interactive wallpaper. Includes five dialogue sequences, Chinese/Japanese/Korean voices, Chinese/Japanese/Korean/English subtitles, head patting, mouse tracking, BGM, and selectable render/texture quality. This is a fan-made project for informational and educational purposes only; all Blue Archive assets belong to their respective rights holders.\n\n语音：中/日/韩 · 字幕：中/日/韩/英 · 纹理：2K/4K/8K\n\n白洲梓（泳装）互动壁纸：包含五组对话、中日韩语音、中日韩英字幕、摸头、视线跟随、BGM，以及可选渲染和纹理画质。本项目为粉丝自制，仅用于信息与教育目的；所有《蔚蓝档案》资产归其各自权利方所有。\n\n## Update Log\n\n### v1.0.0 (2026-08-17)\n- Initial release: Azusa (Swimsuit) memorial lobby wallpaper with CN/JP/KR voices, CN/JP/KR/EN subtitles, head patting, mouse tracking, and 2K/4K/8K textures.\n- 首次发布：白洲梓（泳装）记忆大厅壁纸，中日韩语音、中日韩英字幕、摸头、视线跟随与 2K/4K/8K 纹理。",
   "file": "index.html",
   "general": {
     "properties": {
       "qualitypreset": {
         "index": 0,
         "options": [
-          { "label": "Default (1080P / 2K / 60 FPS)", "value": "default" },
-          { "label": "2K (1440P / 4K / 60 FPS)", "value": "2k" },
-          { "label": "4K (2160P / 4K / 60 FPS)", "value": "4k" },
-          { "label": "Maximum (2160P / 8K / 160 FPS)", "value": "maximum" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Default (1080P / 2K / 60 FPS)",
+            "value": "default"
+          },
+          {
+            "label": "2K (1440P / 4K / 60 FPS)",
+            "value": "2k"
+          },
+          {
+            "label": "4K (2160P / 4K / 60 FPS)",
+            "value": "4k"
+          },
+          {
+            "label": "Maximum (2160P / 8K / 160 FPS)",
+            "value": "maximum"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 0,
         "text": "Visual Quality",
@@ -29,10 +44,22 @@
         "condition": "qualitypreset.value == 'custom'",
         "index": 2,
         "options": [
-          { "label": "720P", "value": "720p" },
-          { "label": "1080P", "value": "1080p" },
-          { "label": "2K", "value": "1440p" },
-          { "label": "4K", "value": "2160p" }
+          {
+            "label": "720P",
+            "value": "720p"
+          },
+          {
+            "label": "1080P",
+            "value": "1080p"
+          },
+          {
+            "label": "2K",
+            "value": "1440p"
+          },
+          {
+            "label": "4K",
+            "value": "2160p"
+          }
         ],
         "order": 2,
         "text": "Render Resolution",
@@ -43,9 +70,18 @@
         "condition": "qualitypreset.value == 'custom'",
         "index": 3,
         "options": [
-          { "label": "2K", "value": "2k" },
-          { "label": "4K", "value": "4k" },
-          { "label": "8K", "value": "8k" }
+          {
+            "label": "2K",
+            "value": "2k"
+          },
+          {
+            "label": "4K",
+            "value": "4k"
+          },
+          {
+            "label": "8K",
+            "value": "8k"
+          }
         ],
         "order": 3,
         "text": "Model Texture Resolution",
@@ -67,8 +103,14 @@
       "positionpreset": {
         "index": 5,
         "options": [
-          { "label": "Default", "value": "default" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 10,
         "text": "Position & Scale",
@@ -124,8 +166,14 @@
       "interactionpreset": {
         "index": 9,
         "options": [
-          { "label": "Default", "value": "default" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 20,
         "text": "Animation & Interactions",
@@ -213,11 +261,26 @@
         "condition": "interactionpreset.value == 'default' || (interactionpreset.value == 'custom' && interactions.value == true && voicelines.value == true)",
         "index": 19,
         "options": [
-          { "label": "Simplified Chinese", "value": "zh-cn" },
-          { "label": "Japanese", "value": "ja" },
-          { "label": "Korean", "value": "ko" },
-          { "label": "English", "value": "en" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Simplified Chinese",
+            "value": "zh-cn"
+          },
+          {
+            "label": "Japanese",
+            "value": "ja"
+          },
+          {
+            "label": "Korean",
+            "value": "ko"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 41,
         "text": "Dialogue Language",
@@ -228,9 +291,18 @@
         "condition": "dialoguelanguagepreset.value == 'custom' && (interactionpreset.value == 'default' || (interactions.value == true && voicelines.value == true))",
         "index": 20,
         "options": [
-          { "label": "Simplified Chinese", "value": "zh-cn" },
-          { "label": "Japanese", "value": "ja" },
-          { "label": "Korean", "value": "ko" }
+          {
+            "label": "Simplified Chinese",
+            "value": "zh-cn"
+          },
+          {
+            "label": "Japanese",
+            "value": "ja"
+          },
+          {
+            "label": "Korean",
+            "value": "ko"
+          }
         ],
         "order": 42,
         "text": "Voice Language",
@@ -249,10 +321,22 @@
         "condition": "dialoguelanguagepreset.value == 'custom' && showsubtitles.value == true && (interactionpreset.value == 'default' || (interactions.value == true && voicelines.value == true))",
         "index": 22,
         "options": [
-          { "label": "Simplified Chinese", "value": "zh-cn" },
-          { "label": "Japanese", "value": "ja" },
-          { "label": "Korean", "value": "ko" },
-          { "label": "English", "value": "en" }
+          {
+            "label": "Simplified Chinese",
+            "value": "zh-cn"
+          },
+          {
+            "label": "Japanese",
+            "value": "ja"
+          },
+          {
+            "label": "Korean",
+            "value": "ko"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          }
         ],
         "order": 44,
         "text": "Primary Subtitle Language",
@@ -271,10 +355,22 @@
         "condition": "dialoguelanguagepreset.value == 'custom' && showsubtitles.value == true && showsecondarysubtitles.value == true && (interactionpreset.value == 'default' || (interactions.value == true && voicelines.value == true))",
         "index": 24,
         "options": [
-          { "label": "Simplified Chinese", "value": "zh-cn" },
-          { "label": "Japanese", "value": "ja" },
-          { "label": "Korean", "value": "ko" },
-          { "label": "English", "value": "en" }
+          {
+            "label": "Simplified Chinese",
+            "value": "zh-cn"
+          },
+          {
+            "label": "Japanese",
+            "value": "ja"
+          },
+          {
+            "label": "Korean",
+            "value": "ko"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          }
         ],
         "order": 46,
         "text": "Secondary Subtitle Language",
@@ -285,9 +381,18 @@
         "condition": "dialoguelanguagepreset.value == 'custom' && (interactionpreset.value == 'default' || (interactions.value == true && voicelines.value == true))",
         "index": 25,
         "options": [
-          { "label": "Center", "value": "center" },
-          { "label": "Left", "value": "left" },
-          { "label": "Right", "value": "right" }
+          {
+            "label": "Center",
+            "value": "center"
+          },
+          {
+            "label": "Left",
+            "value": "left"
+          },
+          {
+            "label": "Right",
+            "value": "right"
+          }
         ],
         "order": 47,
         "text": "Subtitle Alignment",
@@ -298,11 +403,26 @@
         "condition": "dialoguelanguagepreset.value == 'custom' && (interactionpreset.value == 'default' || (interactions.value == true && voicelines.value == true))",
         "index": 26,
         "options": [
-          { "label": "Bottom Center", "value": "bottom-center" },
-          { "label": "Top Center", "value": "top-center" },
-          { "label": "Screen Center", "value": "screen-center" },
-          { "label": "Bottom Left", "value": "bottom-left" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Bottom Center",
+            "value": "bottom-center"
+          },
+          {
+            "label": "Top Center",
+            "value": "top-center"
+          },
+          {
+            "label": "Screen Center",
+            "value": "screen-center"
+          },
+          {
+            "label": "Bottom Left",
+            "value": "bottom-left"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 48,
         "text": "Subtitle Position",
@@ -334,10 +454,22 @@
       "debugpreset": {
         "index": 29,
         "options": [
-          { "label": "Off", "value": "off" },
-          { "label": "Debug Panel Only", "value": "panel" },
-          { "label": "All", "value": "all" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Off",
+            "value": "off"
+          },
+          {
+            "label": "Debug Panel Only",
+            "value": "panel"
+          },
+          {
+            "label": "All",
+            "value": "all"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 60,
         "text": "Debug",
@@ -364,8 +496,14 @@
         "condition": "debugpreset.value == 'panel' || debugpreset.value == 'all' || (debugpreset.value == 'custom' && debugpanelenabled.value == true)",
         "index": 33,
         "options": [
-          { "label": "Default", "value": "default" },
-          { "label": "Custom", "value": "custom" }
+          {
+            "label": "Default",
+            "value": "default"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
         ],
         "order": 63,
         "text": "Debug Panel Position & Scale",
@@ -411,8 +549,14 @@
         "condition": "debugpreset.value == 'panel' || debugpreset.value == 'all' || (debugpreset.value == 'custom' && debugpanelenabled.value == true)",
         "index": 32,
         "options": [
-          { "label": "Simplified Chinese", "value": "zh-cn" },
-          { "label": "English", "value": "en" }
+          {
+            "label": "Simplified Chinese",
+            "value": "zh-cn"
+          },
+          {
+            "label": "English",
+            "value": "en"
+          }
         ],
         "order": 67,
         "text": "Panel Language",
@@ -424,7 +568,10 @@
   "preview": "preview.gif",
   "ratingsex": "none",
   "ratingviolence": "none",
-  "tags": ["Anime", "Interactive"],
+  "tags": [
+    "Anime",
+    "Interactive"
+  ],
   "title": "Blue Archive Memorial Lobby · 蔚蓝档案 · Azusa (Swimsuit) · 梓（泳装） · アズサ（水着） · 8K 互动",
   "type": "web",
   "version": 2,
