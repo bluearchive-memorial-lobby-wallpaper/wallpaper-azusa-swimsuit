@@ -106,13 +106,3 @@ directory, it must pass:
 
 Browser-side `?debug=1` and `?testWeInterfaces` are pre-checks only and cannot
 replace a real Wallpaper Engine window test.
-
-## Release Updates
-
-### v1.0.0 (2026-08-17)
-
-- Published the initial Azusa (Swimsuit) memorial lobby wallpaper release to
-  Steam Workshop item `3785087518`.
-- The published preview GIF uses continuous infinite looping.
-- The default theme color is `#8687af`, sampled from the wallpaper's
-  representative idle-stage screenshot.
