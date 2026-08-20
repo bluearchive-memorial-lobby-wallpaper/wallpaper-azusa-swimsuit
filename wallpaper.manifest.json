@@ -29,7 +29,16 @@
                                                 ],
                                     "expectedCount":  30
                                 },
-                      "preview":  true
+                      "preview":  true,
+                      "source":  {
+                                     "provider":  "kivo",
+                                     "studentRecordId":  228,
+                                     "voiceFields":  {
+                                                         "ja":  "voice",
+                                                         "zh-cn":  "voice_cn",
+                                                         "ko":  "voice_kr"
+                                                     }
+                                 }
                   },
     "structure":  {
                       "requiredFiles":  [
