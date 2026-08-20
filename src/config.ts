@@ -14,7 +14,7 @@ export const PROJECT = {
   id: "blue-archive-azusa-swimsuit",
   slug: "azusa-swimsuit",
   title: "Azusa (Swimsuit)",
-  editionLabel: "PUBLIC EDITION · 1.0.0",
+  editionLabel: `PUBLIC EDITION · ${__WALLPAPER_VERSION__}`,
 } as const;
 
 export const VOICE_LOCALES: readonly VoiceLocale[] = ["ja", "zh-cn", "ko"];
