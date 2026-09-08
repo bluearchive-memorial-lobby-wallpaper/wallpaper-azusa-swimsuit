@@ -18,8 +18,6 @@ The shared runtime and toolchain are provided as npm dependencies:
 
 - `ba-memorial-lobby-wallpaper-runtime`: Spine rendering, interactions,
   dialogues, audio, settings, logging, and the debug panel.
-- `ba-memorial-lobby-wallpaper-toolkit`: checksum manifests, offline packaging,
-  and other build tools.
 
 ## Quick Start
 

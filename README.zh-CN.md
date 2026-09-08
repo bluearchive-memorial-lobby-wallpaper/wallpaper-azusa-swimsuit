@@ -14,7 +14,6 @@
 
 - `ba-memorial-lobby-wallpaper-runtime`：Spine 渲染、交互、对话、音频、设置、
   日志与调试面板。
-- `ba-memorial-lobby-wallpaper-toolkit`：校验清单、离线打包等工具。
 
 ## 快速开始
 
